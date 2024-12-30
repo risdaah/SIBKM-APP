@@ -1,0 +1,13 @@
+# port
+server:
+  port: 9010
+spring:
+  # project name
+  application:
+    name: Client App
+  # thyme leaf config
+  thymeleaf:
+    prefix: classpath:/template/
+    suffix: .html
+    mode: HTML
+    cache: false

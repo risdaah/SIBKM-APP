@@ -1,0 +1,36 @@
+# set port server
+server:
+  port: 9000
+
+spring:
+  # set name app
+  application:
+    name: Server App
+  # database connection
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hr_db
+    username: root
+    password: ""
+  # jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+  # java mail config
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: berisdaa@gmail.com
+    password: myng jslk rayn kvye
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  # java notice-mail template
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    cache: true
